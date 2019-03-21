@@ -8,7 +8,8 @@
     "start2": "supervisor app/server.js",
     "start3": "nodemon app/server.js --exec babel-node",
     "start4": "nodemon app/index.js --exec babel-node",
-    "start": "nodemon server.js --exec babel-node"
+    "start:dev": "nodemon server.js --exec babel-node",
+    "start": "node server.js --exec babel-node"
   },
   "author": "",
   "license": "ISC",
@@ -26,14 +27,10 @@
     "express": "^4.16.4",
     "graphql": "^14.1.1",
     "graphql-tools": "^4.0.4",
-    "knex": "^0.16.3",
     "lodash": "^4.17.11",
     "morgan": "^1.9.1",
     "path": "^0.12.7",
-    "postgraphile": "^4.3.3",
-    "sequelize": "^4.43.0",
-    "sequelize-cli": "^5.4.0",
-    "sqlite3": "^4.0.6"
+    "postgraphile": "^4.3.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
