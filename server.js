@@ -1,9 +1,10 @@
 require('dotenv').config();
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const cors = require('cors');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const serveStatic = require('serve-static');
+const path = require('path');
 const { postgraphile } = require('postgraphile');
 const { connection, schema, options } = require('./.postgraphilerc.js');
 
