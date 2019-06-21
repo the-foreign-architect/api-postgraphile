@@ -17,7 +17,7 @@
     "@graphile-contrib/pg-simplify-inflector": "^4.0.0-alpha.0",
     "apollo-server": "^2.4.8",
     "apollo-server-express": "^2.4.8",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "bcrypt": "^3.0.4",
     "body-parser": "^1.18.3",
     "casual": "^1.6.0",
