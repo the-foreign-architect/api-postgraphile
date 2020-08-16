@@ -5,8 +5,7 @@ const PgSimplifyInflectorPlugin = require('@graphile-contrib/pg-simplify-inflect
 
 // DB DETAILS
 // Our database URL
-const connection =
-  process.env.DATABASE_URL || 'postgresql://tfa:svsHfaMn8MCLnHh@localhost:5432/tfa_dev';
+const connection = process.env.DATABASE_URL;
 // The PostgreSQL schema within our postgres DB to expose
 const schema = ['public'];
 
@@ -31,7 +30,7 @@ const appendPlugins = [PgSimplifyInflectorPlugin];
 // Extends the error response with additional details from the Postgres error.
 // Can be any combination of  ['hint', 'detail', 'errcode']. Default is [].
 
-const pgSettings = async req => {
+const pgSettings = async (req) => {
   let role = 'tfa_anonymous';
   try {
     if (req.user) {
