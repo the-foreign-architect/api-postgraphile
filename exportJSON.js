@@ -8,7 +8,7 @@ const fetch = createApolloFetch({
   uri: 'http://localhost:3000/graphql',
 });
 
-const JSON_DIR = '../tfa-gridsome/src/data'
+const JSON_DIR = '../frontend-gridsome/src/data';
 
 fetch({
   query: `{
@@ -69,6 +69,5 @@ fetch({
     const id = building.id;
     fs.writeFileSync(`${JSON_DIR}/building-${id}.json`, JSON.stringify(building));
   }
-  console.log("...done!");
-
+  console.log('...done!');
 });
