@@ -11,3 +11,4 @@ config/# ignore node_modules symlink
 node_modules
 node_modules.nosync
 data
+.env
